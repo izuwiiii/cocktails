@@ -6,6 +6,7 @@ export interface Drinks {
 }
 
 export interface Cocktail {
+  strIngredient?: string
   idDrink: string
   strDrink: string
   strDrinkAlternate: any

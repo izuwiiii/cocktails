@@ -1,0 +1,50 @@
+.cocktail {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px 0 50px;
+
+    .cocktail-photo {
+        width: fit-content;
+
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    .cocktail-description {
+        width: 800px;
+        // margin-right: 150px;
+        border-radius: 10px;
+        background-color: #F6F6F6;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        b {
+            font-size: 30px;
+        }
+
+        p {
+            margin: 10px;
+            font-size: 20px;
+        }
+
+        span {
+            color: #9e9393;
+        }
+
+        .ingr {
+            margin: 10px;
+            max-height: 600px;
+        }
+    }
+}

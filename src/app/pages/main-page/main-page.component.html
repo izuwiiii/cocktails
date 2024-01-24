@@ -1,2 +1,16 @@
 <app-header></app-header>
-<img [src]="cocktailsDBService.cocktailImage" alt="img">
+<div class="cocktail">
+    <div class="cocktail-photo">
+        <img [src]="cocktailsDBService.cocktailImage" alt="img">
+    </div>
+    <div class="cocktail-description">
+        <h1>{{ cocktailsDBService.cocktailName }}</h1>
+        <h2>Cocktail Info:</h2>
+        <p><b>Instructions:</b>{{ cocktailsDBService.cocktailInstructions }}</p>
+        <div class="ingr">
+            <b>Ingridients:</b><p (click)="getIngr($event)" *ngFor="let ing of cocktailsDBService.cocktailIngredients" >{{ing}}</p>
+        </div>
+        <span>{{ cocktailsDBService.cocktailAlcohol }}</span>
+    </div>
+</div>
+<!-- &nbsp;  -->
