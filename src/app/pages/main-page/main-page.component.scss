@@ -23,6 +23,7 @@
 
         h1 {
             font-size: 50px;
+            text-align: center;
         }
 
         h2 {
@@ -34,17 +35,50 @@
         }
 
         p {
-            margin: 10px;
             font-size: 20px;
+            margin: 10px;
         }
 
         span {
             color: #9e9393;
         }
 
-        .ingr {
-            margin: 10px;
-            max-height: 600px;
+        button {
+            margin: 0 auto;
+            border: 0;
+            cursor: pointer;
+            background-color: white;
+            width: 300px;
+            height: 80px;
+            transition: ease-in 0.3s;
+            border-radius: 4px;
         }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-around;
+
+            .ingr {
+                margin: 10px;
+                // max-height: 600px;
+                width: fit-content;
+
+                p {
+                    cursor: pointer;
+                }
+            }
+    
+            .mesur {
+                margin: 10px;
+                max-height: 600px;
+                width: fit-content;
+            }
+        }
+
     }
 }

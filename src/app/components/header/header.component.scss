@@ -1,5 +1,5 @@
 header {
-
+    margin-bottom: 50px;
     height: 100px;
     display: flex;
     align-items: center;
@@ -10,15 +10,20 @@ header {
         justify-content: space-around;
         width: 100%;
 
-        li {
+        .nav {
             width: fit-content;
-            // font-size: 20px;
             cursor: pointer;
+            transition: ease-in 0.2s;
+        }
+
+        .nav:not(.active):hover {
+            font-weight: bold;
+            font-size: 25px;
         }
     }
 }
 
 .active {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
 }

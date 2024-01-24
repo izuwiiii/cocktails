@@ -1,1 +1,5 @@
 <app-header></app-header>
+<h2>Sorted by: {{cocktailsDB.curIngredient || 'Lemon'}}</h2>
+<div class="cocktailCards">
+    <app-cocktail-card *ngFor="let card of cocktailsDB.cocktailsListIngr" [name]="card.strDrink" [image]="card.strDrinkThumb"></app-cocktail-card>
+</div>
