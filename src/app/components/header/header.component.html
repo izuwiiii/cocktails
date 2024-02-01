@@ -1,7 +1,8 @@
 <header>
     <ul>
-        <li class="nav">Search by name</li>
         <li class="nav" routerLink="/Main" [routerLinkActive]="'active'">Main</li>
+        <li class="nav" [routerLink]="'/Drink/'+cDBs.curCard" [routerLinkActive]="'active'" *ngIf="cDBs.curCard.length != 0">Selected Cocktail</li>
+        <li class="nav" [routerLink]="'/SearchDrinks/'" [routerLinkActive]="'active'">Search by name</li>
         <li class="nav" routerLink="/SearchByIngredientsPage" [routerLinkActive]="'active'">Search by ingredient</li>
     </ul>
 </header>

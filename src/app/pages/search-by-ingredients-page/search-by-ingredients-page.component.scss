@@ -10,3 +10,14 @@ h2 {
     margin-left: 80px;
     padding: 20px;
 }
+
+app-cocktail-card:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+app-cocktail-card:not(:hover) {
+    transform: scale(1);
+    transition: 0.2s ease-in;
+}

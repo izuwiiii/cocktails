@@ -1,0 +1,21 @@
+<app-header></app-header>
+<div class="cocktail">
+    <div class="cocktail-photo">
+        <img [src]="cocktailsDBService.curCocktail.strDrinkThumb" alt="img">
+    </div>
+    <div class="cocktail-description">
+        <h1>{{ cocktailsDBService.curCocktail.strDrink }}</h1>
+        <!-- <h2>Cocktail Info:</h2> -->
+        <p><b>Instructions: </b>{{ cocktailsDBService.curCocktail.strInstructions }}</p>
+        <div class="details">
+            <div class="ingr">
+                <b>Ingridients:</b><p (click)="getIngr($event)" *ngFor="let ing of ingr" >{{ing}}</p>
+            </div>
+            <div class="mesur">
+                <b>Measure:</b><p *ngFor="let mes of mesur" >{{mes}}</p>
+            </div>
+        </div>
+        <span>{{ cocktailsDBService.curCocktail.strAlcoholic }}</span>
+
+    </div>
+</div>

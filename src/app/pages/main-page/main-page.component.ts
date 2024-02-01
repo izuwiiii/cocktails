@@ -19,7 +19,6 @@ export class MainPageComponent implements OnInit {
 
 
   ngOnInit(): void {
-
     if (!this.cocktailsDBService.rendered) {
       this.cocktailsDB.getMenu()
     }
@@ -32,6 +31,7 @@ export class MainPageComponent implements OnInit {
 
   tryNext() {
     this.cocktailsDB.getMenu()
+
   }
 
 

@@ -1,1 +1,9 @@
-<p>search-by-name-page works!</p>
+<app-header></app-header>
+<div class="inp">
+    <input type="text" placeholder="Write drink name here" [(ngModel)]="curInput" (keyup.enter)="cocktailsDB.searchByName(curInput)"> 
+    <button (click)="cocktailsDB.searchByName(curInput)">Search</button>
+</div>
+<h2>Sorted by: {{cocktailsDB.cocktailInput}}</h2>
+<div class="cocktailCards">
+    <app-cocktail-card (click)="cocktailPageNavigate(card.idDrink)" (click)="cocktailsDB.getCocktailDetails(card)" *ngFor="let card of cocktailsDB.cocktailsInputNames" [name]="card.strDrink" [image]="card.strDrinkThumb"></app-cocktail-card>
+</div>
