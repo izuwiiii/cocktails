@@ -20,24 +20,24 @@ body {
   100% { background: #e3dcc8; }
 }
 
-// @-moz-keyframes fadingcolors {
-//     0% { background: #e3dcc8; }
-//    15% { background: #a9b3a5; }
-//    30% { background: #eae9e3; }
-//    45% { background: #d2c385; }
-//    60% { background: #fcaa97; }
-//    75% { background: #d9edd1; }
-//    90% { background: #e5cebd; }
-//   100% { background: #e3dcc8; }
-// }
+@-moz-keyframes fadingcolors {
+    0% { background: #e3dcc8; }
+   // 15% { background: #a9b3a5; }
+   30% { background: #eae9e3; }
+   // 45% { background: #d2c385; }
+   60% { background: #fcaa97; }
+   // 75% { background: #d9edd1; }
+   90% { background: #e5cebd; }
+  100% { background: #e3dcc8; }
+}
 
-// @keyframes fadingcolors {
-//     0% { background: #e3dcc8; }
-//    15% { background: #a9b3a5; }
-//    30% { background: #eae9e3; }
-//    45% { background: #d2c385; }
-//    60% { background: #fcaa97; }
-//    75% { background: #d9edd1; }
-//    90% { background: #e5cebd; }
-//   100% { background: #e3dcc8; }
-// }
+@keyframes fadingcolors {
+    0% { background: #e3dcc8; }
+   // 15% { background: #a9b3a5; }
+   30% { background: #eae9e3; }
+   // 45% { background: #d2c385; }
+   60% { background: #fcaa97; }
+   // 75% { background: #d9edd1; }
+   90% { background: #e5cebd; }
+  100% { background: #e3dcc8; }
+}
