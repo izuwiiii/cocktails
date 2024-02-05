@@ -3,3 +3,41 @@
 body {
     font-family: 'Inter', sans-serif;
 }
+
+
+body {
+	animation: 10s infinite fadingcolors linear;
+}
+
+@-webkit-keyframes fadingcolors {
+    0% { background: #e3dcc8; }
+//    15% { background: #a9b3a5; }
+   30% { background: #eae9e3; }
+//    45% { background: #d2c385; }
+   60% { background: #fcaa97; }
+//    75% { background: #bcf9a3; }
+   90% { background: #e5cebd; }
+  100% { background: #e3dcc8; }
+}
+
+// @-moz-keyframes fadingcolors {
+//     0% { background: #e3dcc8; }
+//    15% { background: #a9b3a5; }
+//    30% { background: #eae9e3; }
+//    45% { background: #d2c385; }
+//    60% { background: #fcaa97; }
+//    75% { background: #d9edd1; }
+//    90% { background: #e5cebd; }
+//   100% { background: #e3dcc8; }
+// }
+
+// @keyframes fadingcolors {
+//     0% { background: #e3dcc8; }
+//    15% { background: #a9b3a5; }
+//    30% { background: #eae9e3; }
+//    45% { background: #d2c385; }
+//    60% { background: #fcaa97; }
+//    75% { background: #d9edd1; }
+//    90% { background: #e5cebd; }
+//   100% { background: #e3dcc8; }
+// }
