@@ -87,3 +87,24 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+        .cocktail {
+            width: 700px;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 50px;
+
+            .cocktail-photo {
+                width: 650px;
+
+                img {
+                    width: 650px;
+                }
+            }
+
+            .cocktail-description {
+                width: 590px;
+            }
+        }
+}
